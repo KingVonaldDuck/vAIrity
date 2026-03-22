@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vAIrity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">
+    <img src="logo.png" alt="vAIrity logo">
+  </div>
+
+  <div class="inquiries-header">
+    <span class="inquiries-label">My Inquiries</span>
+    <button id="addChat" class="add-btn" title="New Inquiry">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="chatList" id="chatList"></div>
+</div>
+
+<div class="main">
+
+  <div class="tabs-bar">
+    <div class="tabs" id="tabs"></div>
+  </div>
+
+  <div class="contentArea">
+
+    <div class="chatArea">
+      <div class="messages" id="messages">
+        <div class="empty-state">
+          <div class="empty-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M4 8a4 4 0 014-4h16a4 4 0 014 4v12a4 4 0 01-4 4H10l-6 4V8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <p>Select or create an inquiry to begin</p>
+        </div>
+      </div>
+
+      <div class="inputArea">
+        <input id="messageInput" placeholder="Type your message…" autocomplete="off">
+        <button id="sendBtn" disabled>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 8L2 2l3 6-3 6 12-6z" fill="currentColor"/></svg>
+          Send
+        </button>
+      </div>
+    </div>
+
+    <div class="sources">
+      <div class="sources-header">
+        <h3>Sources</h3>
+      </div>
+      <div id="sourcesContainer">
+        <div class="sources-empty">No sources yet</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
